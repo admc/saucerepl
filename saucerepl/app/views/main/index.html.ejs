@@ -1,0 +1,14 @@
+<button id="start" type="button">Start!</button>
+
+<script>
+document.getElementById('start').addEventListener("click", function() {
+  var go = function() {
+    new tty.Window();
+  }
+
+  $.post( "/proxy", {"thing": "thing"}, function( data ) {
+  });
+    setTimeout(go, 100);
+});
+</script>
+
