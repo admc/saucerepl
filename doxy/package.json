@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dockerode": "2.0.4",
+    "express": "^4.10.5"
+  }
+}
