@@ -1,0 +1,10 @@
+Docker Shit
+
+boot2docker up
+docker build -t admc/node-tty .
+docker run -i -t admc/node-tty
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+docker run -p 3000:3000 -d admc/node-tty
+boot2docker ssh -L 3000:localhost:3000
